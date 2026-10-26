@@ -11,4 +11,3 @@
     - name: print message
       debug:
         var: ansible_facts
-        state: latest
