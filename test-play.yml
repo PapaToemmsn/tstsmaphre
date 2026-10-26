@@ -3,6 +3,11 @@
   hosts: all
 
   tasks:
+    - name: local action
+      debug:
+        msg: "hello {{ mytestvar }}
+      delegate_to: 127.0.0.1
+
     - name: print message
       debug:
         var: ansible_facts
